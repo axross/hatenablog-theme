@@ -1,0 +1,20 @@
+{
+  "name": "hatenablog-theme",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "stylus app.styl -o bundle.css",
+    "watch": "stylus -w app.styl -o bundle.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "axross <kou@axross.org> (http://axross.me/)",
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^2.5.1",
+    "stylus": "^0.52.4"
+  },
+  "dependencies": {
+    "sanitize.css": "^2.0.0"
+  }
+}

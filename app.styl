@@ -1,0 +1,49 @@
+@import './sanitize'
+
+*
+  word-break break-all
+  word-wrap break-word
+
+html,
+body
+  width 100%
+  margin 0
+  background #f7f7f7
+  color #3f3f3f
+  font-size 16px
+  font-family serif
+
+a
+  color #007cd1
+  &:hover
+    text-decoration underline
+
+#container
+  width 1164px
+  margin 0 auto
+
+#blog-title
+  width 100%
+
+#content
+  width 100%
+  padding 0 32px
+  font-size 0px
+  #wrapper
+    display inline-block
+    width 704px
+    vertical-align top
+    #main
+      display block
+      font-size 16px
+  #box2
+    display inline-block
+    width 364px
+    margin-left 32px
+    vertical-align top
+    #box2-inner
+      display block
+      font-size 16px
+
+@import './entry'
+@import './sidebar'
