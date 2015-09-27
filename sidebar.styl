@@ -5,7 +5,8 @@
     .hatena-module-title
       margin-bottom 16px
       color #1f1f1f
-      font-size 125%
+      font-size 1.5rem
+      font-weight 700
     &.hatena-module-profile
       .hatena-module-body
         .profile-description
@@ -29,3 +30,33 @@
               display none
             .entries-access-ranking-title
               font-size 100%
+    &.hatena-module-category
+      ul
+        list-style-type none
+        // font-size 0
+        li
+          display inline-block
+          a
+            display inline-block
+            // height 1.5rem
+            // line-height 1.5rem
+            // margin 8px 8px 0 0
+            // padding 0 8px
+            // background $tagBackgroundColor
+            // font-size 0.875rem
+    &.hatena-module-search-box
+      .hatena-module-body
+        font-size 0px
+        .search-module-input
+          line-height 2rem
+          padding 0 8px
+          border-radius 3px 0 0 3px
+          background $codeBackgroundColor
+          font-size 1rem
+        .search-module-button
+          line-height 2rem
+          padding 0 16px
+          border-radius 0 3px 3px 0
+          background $mainColor
+          color #fff
+          font-size 1rem

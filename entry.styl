@@ -1,17 +1,20 @@
 #main
-  .entry
+  .entry,
+  .archive-entry
     width 100%
-    margin-bottom 64px
-    .entry-header
+    margin-bottom 4rem
+    .entry-header,
+    .archive-entry-header
       position relative
-      margin-bottom 16px
-      .entry-date
+      margin-bottom 1rem
+      .entry-date,
+      .date
         display none
       .entry-title
-        margin-bottom 16px
+        margin-bottom 1rem
         a
           color $headColor
-          font-size 200%
+          font-size 2rem
       .entry-categories
         a
           color #7f7f7f
@@ -20,7 +23,17 @@
       .entry-header-menu
         position absolute
         visibility hidden
-    .entry-content
+    .categories
+      margin-bottom 1rem
+      a
+        color #7f7f7f
+        &:before
+          content: '#'
+    .entry-thumb
+      display none
+      float none
+    .entry-content,
+    .archive-entry-body
       line-height 1.75
       *
         max-width 100%
@@ -50,17 +63,18 @@
       h5,
       h6
         color $headColor
+
       h1
-        font-size 200%
+        font-size 2rem
       h2
-        font-size 175%
+        font-size 1.75rem
       h3
-        font-size 150%
+        font-size 1.5rem
       h4
-        font-size 125%
+        font-size 1.25rem
       h5,
       h6
-        font-size 100%
+        font-size 1rem
       ul,
       ol
         display block
@@ -88,12 +102,12 @@
           margin-bottom auto
       .code
         line-height 1.5
-        padding 16px
+        padding 1rem
         border-radius 3px
         background $codeBackgroundColor
-        font-size 87.5%
+        font-size 0.875rem
       .hatena-asin-detail
-        padding 16px
+        padding 1rem
         border none
         border-radius 3px
         background $codeBackgroundColor
@@ -106,8 +120,12 @@
             margin 0 auto
       .entry-see-more
         display inline-block
-        margin-top 16px
+        margin-top 1rem
         &:after
           content ' »'
     .entry-footer
       display none
+    .highlight
+      margin 0
+      padding 0
+      border none
