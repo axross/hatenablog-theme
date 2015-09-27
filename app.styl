@@ -1,4 +1,12 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic'
 @import './sanitize'
+
+$mainColor = #007CD1
+$textColor = #50616c
+$headColor = #1f2930
+$codeColor = #507E9E
+$codeBackgroundColor = #ebf3f9
+$backgroundColor = #f7f8f9
 
 *
   word-break break-all
@@ -8,18 +16,18 @@ html,
 body
   width 100%
   margin 0
-  background #f7f7f7
-  color #3f3f3f
+  background #fff
+  color $textColor
   font-size 16px
-  font-family serif
+  font-family 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
 
 a
-  color #007cd1
+  color $mainColor
   &:hover
     text-decoration underline
 
 #container
-  width 1164px
+  width 1088px
   margin 0 auto
 
 #blog-title
@@ -31,15 +39,15 @@ a
   font-size 0px
   #wrapper
     display inline-block
-    width 704px
+    width 640px
     vertical-align top
     #main
       display block
       font-size 16px
   #box2
     display inline-block
-    width 364px
-    margin-left 32px
+    width 320px
+    margin-left 64px
     vertical-align top
     #box2-inner
       display block
